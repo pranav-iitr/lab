@@ -1,0 +1,32 @@
+* C:\Users\PRANAV ARYA\Desktop\lab\Draft4.asc
+XX1 N005 clk A N003 d_flip_flop
+XX2 N008 clk B N002 d_flip_flop
+XX3 N011 clk C N001 d_flip_flop
+A1 N004 0 0 0 N006 0 N005 0 OR Vhigh = 5V , Vlow = 0V, Ref = 2.5 , td = 0.1ms
+A2 A 0 0 0 N002 0 N004 0 AND Vhigh = 5V , Vlow = 0V, Ref = 2.5 , td = 0.1m
+A3 B N003 0 C 0 0 N006 0 AND Vhigh = 5V , Vlow = 0V, Ref = 2.5 , td = 0.1ms
+A4 N007 0 0 0 N009 0 N008 0 OR Vhigh = 5V , Vlow = 0V, Ref = 2.5 , td = 0.1ms
+A5 0 N002 0 C 0 0 N007 0 AND Vhigh = 5V , Vlow = 0V, Ref = 2.5 , td = 0.1ms
+A6 N001 0 B N003 0 0 N009 0 AND Vhigh = 5V , Vlow = 0V, Ref = 2.5 , td = 0.1ms
+A7 N010 0 0 0 N012 0 N011 0 OR Vhigh = 5V , Vlow = 0V, Ref = 2.5 , td = 0.1ms
+A8 N002 0 0 N001 0 0 N010 0 AND Vhigh = 5V , Vlow = 0V, Ref = 2.5 , td = 0.1ms
+A9 0 N001 N003 0 B 0 N012 0 AND Vhigh = 5V , Vlow = 0V, Ref = 2.5 , td = 0.1ms
+V1 clk 0 PULSE(0 5 0 0 0 5 10)
+
+* block symbol definitions
+.subckt d_flip_flop D clk Q Qinv
+XX1 Q1 D clk Q1 2_1_mux
+XX2 Q1 Q clk Q 2_1_mux
+A1 Q 0 0 0 0 Qinv 0 0 BUF Vhigh = 5V , Vlow = 0V, Ref = 2.5 , td = 0.1ms
+.ends d_flip_flop
+
+.subckt 2_1_mux A B S out
+A1 0 A 0 S 0 0 N001 0 AND Vhigh = 5V , Vlow = 0V, Ref = 2.5 , td = 0.1ms
+A2 0 N003 0 B 0 0 N002 0 AND Vhigh = 5V , Vlow = 0V, Ref = 2.5 , td = 0.1ms
+A3 0 N001 0 N002 0 0 out 0 OR Vhigh = 5V , Vlow = 0V, Ref = 2.5 , td = 0.1
+A4 S 0 0 0 0 N003 0 0 BUF Vhigh = 5V , Vlow = 0V, Ref = 2.5 , td = 0.001ms
+.ends 2_1_mux
+
+.tran 140
+.backanno
+.end

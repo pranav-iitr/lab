@@ -1,0 +1,21 @@
+Version 4
+SymbolType BLOCK
+LINE Normal -64 -16 -16 -16
+LINE Normal -64 -16 -64 -16
+LINE Normal -64 15 -16 15
+LINE Normal 64 -15 16 -15
+LINE Normal 64 16 16 16
+RECTANGLE Normal 16 30 -16 -32
+TEXT -9 -1 VCenter 0 D Flif Fop
+PIN -64 -16 NONE 8
+PINATTR PinName D
+PINATTR SpiceOrder 1
+PIN -64 16 NONE 8
+PINATTR PinName clk
+PINATTR SpiceOrder 2
+PIN 64 -16 NONE 8
+PINATTR PinName Q
+PINATTR SpiceOrder 3
+PIN 64 16 NONE 8
+PINATTR PinName Qinv
+PINATTR SpiceOrder 4
