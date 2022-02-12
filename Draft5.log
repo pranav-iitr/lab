@@ -1,0 +1,23 @@
+Circuit: * C:\Users\PRANAV ARYA\Desktop\labsub\Draft5.asc
+
+WARNING: Less than two connections to node DIFF.  This node is used by A:X2:2.
+WARNING: Less than two connections to node BOUT.  This node is used by A1.
+Direct Newton iteration for .op point succeeded.
+
+Date: Sat Feb 05 20:34:33 2022
+Total elapsed time: 0.096 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2622
+traniter = 2619
+tranpoints = 1295
+accept = 1290
+rejected = 5
+matrix size = 13
+fillins = 0
+solver = Normal
+Matrix Compiler1: 226 bytes object code size  0.2/0.2/[0.1]
+Matrix Compiler2: 553 bytes object code size  0.2/0.3/[0.2]
+

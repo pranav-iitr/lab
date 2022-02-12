@@ -1,0 +1,19 @@
+Version 4
+SymbolType BLOCK
+LINE Normal -112 -32 -64 -32
+LINE Normal -112 32 -64 32
+LINE Normal 128 -32 80 -32
+LINE Normal 128 32 80 32
+RECTANGLE Normal 80 49 -64 -47
+PIN -112 -32 NONE 8
+PINATTR PinName A
+PINATTR SpiceOrder 1
+PIN -112 32 NONE 8
+PINATTR PinName B
+PINATTR SpiceOrder 2
+PIN 128 -32 NONE 8
+PINATTR PinName Diff
+PINATTR SpiceOrder 3
+PIN 128 32 NONE 8
+PINATTR PinName Borrow
+PINATTR SpiceOrder 4

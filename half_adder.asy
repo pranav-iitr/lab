@@ -1,0 +1,22 @@
+Version 4
+SymbolType CELL
+LINE Normal 112 -32 52 -32
+LINE Normal 113 16 52 16
+LINE Normal -64 -32 -64 -32
+LINE Normal -145 -32 -64 -32
+LINE Normal -144 16 -144 16
+LINE Normal -144 16 -65 16
+RECTANGLE Normal 52 35 -65 -46
+TEXT -38 -5 Left 1 Half Adder
+PIN -144 -32 NONE 8
+PINATTR PinName A
+PINATTR SpiceOrder 1
+PIN -144 16 NONE 8
+PINATTR PinName B
+PINATTR SpiceOrder 2
+PIN 112 -32 NONE 8
+PINATTR PinName Sum
+PINATTR SpiceOrder 3
+PIN 112 16 NONE 8
+PINATTR PinName carry
+PINATTR SpiceOrder 4

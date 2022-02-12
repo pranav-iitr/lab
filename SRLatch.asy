@@ -1,0 +1,20 @@
+Version 4
+SymbolType BLOCK
+LINE Normal -96 -16 -48 -16
+LINE Normal -96 16 -48 16
+LINE Normal 96 -16 48 -16
+LINE Normal 96 15 48 15
+RECTANGLE Normal 48 31 -48 -32
+TEXT -32 -1 Left 1 SR Latch
+PIN -96 -16 NONE 8
+PINATTR PinName S
+PINATTR SpiceOrder 1
+PIN -96 16 NONE 8
+PINATTR PinName R
+PINATTR SpiceOrder 2
+PIN 96 -16 NONE 8
+PINATTR PinName Q
+PINATTR SpiceOrder 3
+PIN 96 16 NONE 8
+PINATTR PinName Qdash
+PINATTR SpiceOrder 4

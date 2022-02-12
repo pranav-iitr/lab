@@ -1,0 +1,25 @@
+Version 4
+SymbolType CELL
+LINE Normal -80 -16 -32 -16
+LINE Normal -80 0 -32 0
+LINE Normal -80 0 -80 0
+LINE Normal -80 16 -32 16
+LINE Normal 80 16 32 16
+LINE Normal 80 -16 32 -16
+RECTANGLE Normal 32 31 -32 -32
+TEXT -21 -1 Left 0 Full Adder
+PIN -80 -16 NONE 8
+PINATTR PinName A
+PINATTR SpiceOrder 1
+PIN -80 0 NONE 8
+PINATTR PinName B
+PINATTR SpiceOrder 2
+PIN -80 16 NONE 8
+PINATTR PinName Cin
+PINATTR SpiceOrder 3
+PIN 80 16 NONE 8
+PINATTR PinName Cout
+PINATTR SpiceOrder 4
+PIN 80 -16 NONE 8
+PINATTR PinName Sum
+PINATTR SpiceOrder 5
